@@ -4,7 +4,6 @@ import { menuSlide } from './anime.js'
 import Link from './Link'
 import Footer from './Footer'
 import Curve from './Curve'
-import { useState, useEffect } from 'react'
 function Navbar() {
   const links = ['Home', 'About', 'Gallery', 'Contact']
 

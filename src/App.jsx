@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './Navbar'
 import { AnimatePresence } from 'framer-motion'
 import FullNavbar from './FullNavbar'
+import Sections from './Sections'
 
 function App() {
   const [isActive, setIsActive] = useState(false)
@@ -33,6 +34,9 @@ function App() {
       ) : (
         <FullNavbar />
       )}
+      <Sections />
+      <Sections />
+      <Sections />
     </>
   )
 }
