@@ -1,0 +1,14 @@
+.border-curve::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 85%;
+  border-top-left-radius: 50% 110%;
+  border-top-right-radius: 50% 110%;
+  background-color: #fff;
+  background-image: url('./assets/beach-bg.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  display: block;
+}

@@ -16,7 +16,7 @@ function Navbar() {
         exit="exit"
         className="bg-sky-900 text-gray-100 h-screen fixed top-0 right-0"
       >
-        <div className="box-border h-full w-full p-28 flex flex-col justify-between">
+        <div className="box-border h-full w-full pl-28 pr-10 py-28 flex flex-col justify-between">
           <p className="nav-title text-xs text-gray-400">Navigation</p>
           <div className="flex flex-col gap-8 text-5xl">
             {links.map((data, index) => {

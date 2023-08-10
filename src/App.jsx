@@ -3,7 +3,9 @@ import './App.css'
 import Navbar from './Navbar'
 import { AnimatePresence } from 'framer-motion'
 import FullNavbar from './FullNavbar'
-import Sections from './Sections'
+import Sections1 from './Sections1'
+import Sections2 from './Sections2'
+import Sections3 from './Sections3'
 
 function App() {
   const [isActive, setIsActive] = useState(false)
@@ -34,9 +36,9 @@ function App() {
       ) : (
         <FullNavbar />
       )}
-      <Sections />
-      <Sections />
-      <Sections />
+      <Sections1 />
+      <Sections2 />
+      <Sections3 />
     </>
   )
 }
