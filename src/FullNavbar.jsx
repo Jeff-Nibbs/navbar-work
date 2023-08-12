@@ -5,7 +5,7 @@ import { navbarSlide } from './anime.js'
 function FullNavbar() {
   const [lastScroll, setLastScroll] = useState(0)
   const [isActive, setIsActive] = useState(true)
-  const [isPurple, setIsPurple] = useState(false)
+  const [isDark, setIsDark] = useState(false)
 
   const handleScroll = () => {
     if (window.scrollY > lastScroll && window.scrollY > 500) {
@@ -18,9 +18,9 @@ function FullNavbar() {
 
   const handleNavTransistion = () => {
     if (window.scrollY > 230) {
-      setIsPurple(true)
+      setIsDark(true)
     } else {
-      setIsPurple(false)
+      setIsDark(false)
     }
   }
 
@@ -48,7 +48,7 @@ function FullNavbar() {
       initial="initial"
       animate={isActive ? 'enter' : 'exit'}
       className={`flex px-8 py-5 justify-between ${
-        isPurple ? 'bg-purple-600 border-gray-800 shadow-lg border-b-2' : 'bg-transparent'
+        isDark ? 'bg-purple-600 border-gray-800 shadow-lg border-b-2' : 'bg-transparent'
       } transition-colors fixed top-0 w-full z-50`}
     >
       <a className="text-3xl" href="#">
